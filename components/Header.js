@@ -1,7 +1,6 @@
 export default function Header({ title }) {
   return (
-    <header className="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 z-50 shadow-md">
-      {/* If you want true full-width edge-to-edge, remove 'max-w-7xl mx-auto' */}
+    <header className="fixed top-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">{title}</h1>
         <nav>

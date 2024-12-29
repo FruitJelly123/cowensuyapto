@@ -7,11 +7,24 @@ export default function Home() {
         <title>Home Page</title>
       </Head>
 
-      <div className="text-center mt-8">
-        <h2 className="text-xl">
-          Get started by editing{' '}
-          <code className="bg-gray-100 p-1">pages/index.js</code>
-        </h2>
+      {/* Hero Section */}
+      <div className="relative bg-black text-white h-screen">
+        {/* Header Overlay */}
+        <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold">The Leader in Website Design</h1>
+          <p className="text-lg md:text-2xl mt-4">Websites that inspire and captivate</p>
+          <button className="mt-6 bg-white text-black px-6 py-3 rounded-md text-lg font-semibold hover:bg-gray-100">
+            Get Started
+          </button>
+        </div>
+
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-50"
+          style={{
+            backgroundImage: "url('/path-to-your-image.png')", // Replace with your actual image path
+          }}
+        ></div>
       </div>
     </>
   )
